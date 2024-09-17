@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form name="calc">
+                <input type="text" name="display" id="display" readonly>
+                <div class="buttons">
+                    <input type="button" value="AC" onclick="clearDisplay()">
+                    <input type="button" value="DE" onclick="deleteLast()">
+                    <input type="button" value="(" onclick="addChar('(')">
+                    <input type="button" value=")" onclick="addChar(')')">
+                    <input type="button" value="." onclick="addChar('.')">
+                    <input type="button" value="/" onclick="addChar('/')">
+                    <input type="button" value="7" onclick="addChar('7')">
+                    <input type="button" value="8" onclick="addChar('8')">
+                    <input type="button" value="9" onclick="addChar('9')">
+                    <input type="button" value="*" onclick="addChar('*')">
+                    <input type="button" value="4" onclick="addChar('4')">
+                    <input type="button" value="5" onclick="addChar('5')">
+                    <input type="button" value="6" onclick="addChar('6')">
+                    <input type="button" value="-" onclick="addChar('-')">
+                    <input type="button" value="1" onclick="addChar('1')">
+                    <input type="button" value="2" onclick="addChar('2')">
+                    <input type="button" value="3" onclick="addChar('3')">
+                    <input type="button" value="+" onclick="addChar('+')">
+                    <input type="button" value="00" onclick="addChar('00')">
+                    <input type="button" value="0" onclick="addChar('0')">
+                    <input type="button" value="=" onclick="calculate()">
+                    <input type="button" value="√" onclick="sqrt()">
+                    <input type="button" value="x²" onclick="square()">
+                    <input type="button" value="%" onclick="percent()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
